@@ -12,10 +12,10 @@ const Modal = ({ modalData }) => {
             <div className="modal">
                 <div className="modal-box w-11/12 max-w-5xl p-5">
 
-                    <div className='flex justify-between px-5 gap-7 py-4'>
+                    <div className='lg:flex-row md:flex-row flex-col flex justify-between px-5 gap-7 py-4'>
                         <div className='border-2 border-gray-300 p-5'>
                             <h3 className='text-2xl font-semibold'>{description}</h3>
-                            <div className=' flex gap-4 py-6'>
+                            <div className='flex lg:flex-row flex-col gap-4 py-6'>
                                 {
                                     pricing && pricing.map(singlepricing => <div key={singlepricing.id} className=''>
                                         <div className='p-5 shadow-lg'>
@@ -27,7 +27,7 @@ const Modal = ({ modalData }) => {
                                 }
                             </div>
 
-                            < div className='flex justify-between px-4 text-left'>
+                            < div className='flex lg:flex-row justify-between px-4 text-left'>
                                 <div>
                                     <h4 className='font-bold text-xl'>Feature</h4>
                                     {
